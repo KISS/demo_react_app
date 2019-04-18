@@ -1,13 +1,78 @@
 $color-purple: #cc4397;
-$color-blue: #0059ff;
+$color-purple-dark: #4f4fff;
+$color-blue: #497aff;
+$color-orange: #ffa513;
+$color-orange-bright: #ff8c5b;
+$color-black: #000000;
+$color-white: #ffffff;
 
-.app {
-  color: $color-blue;
-  font-size: 2rem;
-  text-align: center;
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  height: 100vh;
 }
 
-.sectionHeader {
-  font-size: 3rem;
-  color: $color-purple;
+a {
+  color: $color-purple-dark;
+}
+
+a:hover,
+a:active {
+  color: $color-blue;
+}
+
+header {
+  background-color: $color-orange-bright;
+  height: 180px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.siteHeading {
+  color: $color-white;
+  font-size: 24px;
+  text-shadow: 2px 1px 5px $color-orange;
+}
+
+.contentContainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 40px;
+  margin: 40px;
+  min-height: 600px;
+  height: 100%;
+}
+
+nav a {
+  display: block;
+  margin: 0 0 20px;
+}
+
+main h1 {
+  margin-top: 0px;
+  color: $color-black;
+}
+
+.nav h3 {
+  margin-top: 0px;
+  box-shadow: -3px 0 $color-orange-bright;
+  display: inline-block;
+  padding: 0px 4px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: $color-white;
+  border-color: $color-orange;
+}
+
+footer {
+  border-top: 1px dotted $color-orange-bright;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 12px;
 }
