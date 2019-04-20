@@ -7,13 +7,13 @@ import BlogPost from './BlogPost.js';
 class BlogList extends Component {
   render () {
     const blogList = Object.keys(data).map((blog, i) => {
-      return <BlogPost key={i} title={data[blog].title} date={data[blog].date} content={data[blog].content} src={data[blog].src}/>
+      return <div key={i}><BlogPost title={data[blog].title} date={data[blog].date} content={data[blog].content} src={data[blog].src}/></div>
     })
 
     return (
       <div>
         <h1>All Blog Posts</h1>
-        {blogList}
+        <div className="row mb-2">{blogList}</div>
       </div>
     )
   }

@@ -5,8 +5,6 @@ import {
   Route,
 } from 'react-router-dom';
 
-import blogs from './blogs/blogs.js';
-
 // components
 import Header from './components/Header.js';
 import Main from './components/Main.js';

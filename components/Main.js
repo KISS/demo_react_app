@@ -12,8 +12,10 @@ class Main extends Component {
 
     return (
       <main>
-        <h1>Top Blog Posts</h1>
-        {blogList}
+        <div>
+          <h1>Recent Blog Posts</h1>
+          <div className="row mb-2">{blogList}</div>
+        </div>
       </main>
     )
   }

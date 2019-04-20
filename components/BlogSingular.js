@@ -14,10 +14,12 @@ class BlogSingular extends Component {
     const blog = blogList.filter((b) => {
       return b.props.url.includes(thisRef.props.match.params.title)
     })
+    const title = blog[0].props.title;
 
     return (
       <div>
-        {blog}
+        <h1>Reading: {title}</h1>
+        <div className="row mb-2">{blog}</div>
       </div>
     )
   }

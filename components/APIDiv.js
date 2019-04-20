@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styles from '../scss/app.scss';
 
 class APIDiv extends Component {
   constructor(props) {
@@ -49,9 +50,9 @@ class APIDiv extends Component {
       return <div>Loading...</div>
     } else {
       return (
-        <div>
-          <h3>5 Top Wikipedia Articles from: {date}</h3>
-          <ul>
+        <div className="mt-4">
+          <h3>8 Top Wikipedia Articles from: {date}</h3>
+          <ul className={styles.list}>
             {items.map((item, i) => (
               <li key={i} id={item.article}>
                 {item.article} was viewed {item.views} times: <a href={url + item.article} target="_blank">read the article</a>
